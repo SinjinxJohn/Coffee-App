@@ -1,0 +1,199 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        tools:context=".MainActivity"
+        android:background="#EFEBE9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="The DEV BARISTA"
+            android:textSize="35sp"
+
+
+            android:fontFamily="cursive"
+            style="@style/Head"/>
+
+        <EditText
+            android:id="@+id/album_description_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Customer Name"/>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingTop="10dp"
+            android:text="Toppings"
+            android:textAllCaps="true"
+            style="@style/CustomText"/>
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whipped Cream"
+            style="@style/Check"
+
+            />
+        <CheckBox
+            android:id="@+id/checkBoxChocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"
+            style="@style/Check"
+
+            />
+        <CheckBox
+            android:id="@+id/checkBoxCinnamon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinammon"
+            style="@style/Check"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxIceCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ice Cream"
+            style="@style/Check"
+
+            />
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sides"
+            android:textAllCaps="true"
+            android:paddingTop="20dp"
+            style="@style/CustomText" />
+        <CheckBox
+            android:id="@+id/carrotCake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carrot Cake"
+            style="@style/Check"/>
+        <CheckBox
+            android:id="@+id/Crossoient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crossoient"
+            style="@style/Check"/>
+        <CheckBox
+            android:id="@+id/Donut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donut"
+            style="@style/Check"/>
+        <CheckBox
+            android:id="@+id/Pasteries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasteries"
+            style="@style/Check"/>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="coffee cups"
+            android:textAllCaps="true"
+            style="@style/CustomText"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+
+                android:layout_width="40dp"
+
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/quantity_text_view"
+                android:onClick="decrement"
+                android:text="-"
+                />
+
+
+            <TextView
+
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="16dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/quantity_text_view"
+                android:onClick="increment"
+                android:text="+"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="order summary"
+            android:textAllCaps="true"
+            style="@style/CustomText"/>
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="$0"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick= 'submitOrder'
+            android:text="ORDER"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
